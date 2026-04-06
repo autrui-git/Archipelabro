@@ -79,7 +79,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="README.md" />
+    <None Include="worlds\broforce\archipelago.json" />
     <None Include="packages.config" />
+    <None Include="worlds\broforce\docs\en_Archipelabro.md" />
+    <None Include="worlds\broforce\docs\fr_Archipelabro.md" />
+    <None Include="worlds\broforce\docs\setup_en.md" />
+    <None Include="worlds\broforce\docs\setup_fr.md" />
+    <Content Include="worlds\broforce\rules.py" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="worlds\broforce\items.py" />
+    <Content Include="worlds\broforce\locations.py" />
+    <Content Include="worlds\broforce\options.py" />
+    <Content Include="worlds\broforce\regions.py" />
+    <Content Include="worlds\broforce\web_world.py" />
+    <Content Include="worlds\broforce\world.py" />
+    <Content Include="worlds\broforce\__init__.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
