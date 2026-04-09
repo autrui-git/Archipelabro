@@ -11,12 +11,14 @@ if TYPE_CHECKING:
 
 ITEM_NAME_TO_ID = {
     "Test Item": 1,
-    "Test Filler Item": 2,
+    "Filler": 2,
+    "Trap": 2,
 }
 
 DEFAULT_ITEM_CLASSIFICATIONS = {
     "Test Item": ItemClassification.progression,
-    "Test Filler Item": ItemClassification.filler,
+    "Filler": ItemClassification.filler,
+    "Trap": ItemClassification.trap,
 }
 
 class BroforceItem(Item):

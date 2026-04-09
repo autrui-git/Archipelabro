@@ -47,9 +47,9 @@ def create_events(world: BroforceWorld) -> None:
     test_region_1 = world.get_region("Test Region 1")
 
     # add events
-    overworld.addevent(
+    overworld.add_event(
         "Try event", "It's a try", location_type=BroforceLocation, item_type=items.BroforceItem
     )
-    test_region_1.addevent(
+    test_region_1.add_event(
         "Winning condition", "Victory", location_type=BroforceLocation, item_type=items.BroforceItem
     )
