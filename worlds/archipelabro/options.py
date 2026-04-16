@@ -4,9 +4,6 @@ from dataclasses import dataclass
 from Options import DeathLink, PerGameCommonOptions, Range
 
 class TrapChance(Range):
-    """
-    Percentage chance that any given Confetti Cannon will be replaced by a Math Trap.
-    """
 
     display_name = "Trap Chance"
 

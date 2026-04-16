@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 ITEM_NAME_TO_ID = {
     "Test Item": 1,
     "Filler": 2,
-    "Trap": 2,
+    "Trap": 3,
 }
 
 DEFAULT_ITEM_CLASSIFICATIONS = {

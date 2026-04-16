@@ -7,7 +7,7 @@ from worlds.AutoWorld import World
 
 # My worlds files
 from . import web_world, items, locations, regions, rules
-from . import options as broforce_options
+from .options import BroforceOptions
 
 class BroforceWorld (World):
     """
@@ -22,8 +22,8 @@ class BroforceWorld (World):
     web = web_world.BroforceWebWorld()
     
     # associate options
-    options_dataclass = broforce_options.BroforceOptions
-    options: broforce_options.BroforceOptions
+    options_dataclass = BroforceOptions
+    options: BroforceOptions
     
     apworld_version = 1
 
@@ -55,4 +55,4 @@ class BroforceWorld (World):
 
     def fill_slot_data(self) -> Mapping[str, Any]:
         # If you need access to the player's chosen options on the client side, there is a helper for that.
-        return self.options.as_dict()
+        return self.options.as_dict("death_link", "trap_chance")
